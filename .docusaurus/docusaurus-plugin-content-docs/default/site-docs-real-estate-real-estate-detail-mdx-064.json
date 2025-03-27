@@ -1,0 +1,24 @@
+{
+  "id": "real-estate/real-estate-detail",
+  "title": "real-estate-detail",
+  "description": "",
+  "source": "@site/docs/real-estate/real-estate-detail.mdx",
+  "sourceDirName": "real-estate",
+  "slug": "/real-estate/real-estate-detail",
+  "permalink": "/docs/real-estate/real-estate-detail",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/real-estate/real-estate-detail.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real Estate Management",
+    "permalink": "/docs/real-estate/hello"
+  },
+  "next": {
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
+  }
+}

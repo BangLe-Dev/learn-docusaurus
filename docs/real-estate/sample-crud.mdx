@@ -1,0 +1,148 @@
+import CollapsibleSection from '@site/src/components/collaps';
+
+---
+title: API CRUD Documentation
+sidebar_label: API CRUD
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { useState } from 'react';
+
+# API CRUD Documentation
+
+## Base URL
+
+```
+https://api.example.com/v1
+```
+
+## Authentication
+
+All requests must include an API key in the headers:
+
+```http
+Authorization: Bearer YOUR_API_KEY
+```
+
+## Endpoints
+
+<CollapsibleSection title="📌 Get All Items">
+```http
+GET /items
+```
+#### Response:
+```json
+[
+  {
+    "id": 1,
+    "name": "Item 1",
+    "description": "Description of item 1"
+  }
+]
+```
+</CollapsibleSection>
+
+<CollapsibleSection title="📌 Get Single Item">
+```http
+GET /items/{id}
+```
+#### Response:
+```json
+{
+  "id": 1,
+  "name": "Item 1",
+  "description": "Description of item 1"
+}
+```
+</CollapsibleSection>
+
+<CollapsibleSection title="📌 Create New Item">
+```http
+POST /items
+```
+#### Request Body:
+```json
+{
+  "name": "New Item",
+  "description": "Description of new item"
+}
+```
+#### Response:
+```json
+{
+  "id": 2,
+  "name": "New Item",
+  "description": "Description of new item"
+}
+```
+</CollapsibleSection>
+
+<CollapsibleSection title="📌 Update an Item">
+```http
+PUT /items/{id}
+```
+#### Request Body:
+```json
+{
+  "name": "Updated Item",
+  "description": "Updated description"
+}
+```
+#### Response:
+```json
+{
+  "id": 1,
+  "name": "Updated Item",
+  "description": "Updated description"
+}
+```
+</CollapsibleSection>
+
+<CollapsibleSection title="📌 Delete an Item">
+```http
+DELETE /items/{id}
+```
+#### Response:
+```json
+{
+  "message": "Item deleted successfully"
+}
+```
+</CollapsibleSection>
+
+## Error Handling
+
+| Status Code | Meaning |
+|------------|---------|
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 403 | Forbidden |
+| 404 | Not Found |
+| 500 | Internal Server Error |
+
+## Example Requests
+
+<Tabs>
+  <TabItem value="curl" label="cURL">
+
+  ```sh
+  curl -X GET "https://api.example.com/v1/items" \
+       -H "Authorization: Bearer YOUR_API_KEY"
+  ```
+
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+
+  ```js
+  fetch("https://api.example.com/v1/items", {
+    headers: { "Authorization": "Bearer YOUR_API_KEY" }
+  }).then(res => res.json()).then(console.log);
+  ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+This document was generated using **MDX** in Docusaurus 🚀.

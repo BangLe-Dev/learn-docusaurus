@@ -1,0 +1,28 @@
+{
+  "id": "real-estate/hello",
+  "title": "Hello",
+  "description": "This is my first Docusaurus document!",
+  "source": "@site/docs/real-estate/hello.md",
+  "sourceDirName": "real-estate",
+  "slug": "/real-estate/hello",
+  "permalink": "/docs/real-estate/hello",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/real-estate/hello.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_label": "Real Estate Management",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Real Estate List",
+    "permalink": "/docs/real-estate/real-estate-list"
+  },
+  "next": {
+    "title": "Real Estate Detail",
+    "permalink": "/docs/real-estate/real-estate-detail"
+  }
+}
